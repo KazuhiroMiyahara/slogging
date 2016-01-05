@@ -39,7 +39,7 @@ setup(
         'Programming Language :: Python :: 2.6',
         'Environment :: No Input/Output (Daemon)',
         ],
-    install_requires=[],  # removed for better compat
+    install_requires=['tzlocal'],  # There should be few required modules for better compat
     scripts=['bin/swift-account-stats-logger',
              'bin/swift-container-stats-logger',
              'bin/swift-log-stats-collector', 'bin/swift-log-uploader',
